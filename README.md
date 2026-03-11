@@ -1,5 +1,6 @@
 # rumifish
 a deadfish interpreter / language shell written in go !
+supports the standard `i`, `d`, `s` and `o` commands as well as the optionally implemented `h` (halt) command.
 
 ## usage
 to enter the REPL:
@@ -12,6 +13,9 @@ to run a program written in deadfish:
 ```
 rumifish path/to/program
 ```
+
+## technical stuff
+this aims to stay as faithful as possible to the original interpreter following the specifications listed in the [esolang wiki](https://esolangs.org/wiki/Deadfish). as such rumifish only checks if the accumulator == 256 or -1, rather than >= or <=, respectively.
 
 ## notes
 this does **NOT** support compiling into machine code (yet?)
